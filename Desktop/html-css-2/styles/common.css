@@ -1,0 +1,113 @@
+/* Common styles */
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+.slant-header {
+    position: relative;
+    height: 300px;
+    /* overflow: hidden; */
+}
+
+.slant-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 300px;
+    background-repeat: no repeat;
+    background-size: cover;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    filter:brightness(60%);
+}
+.slant-header > .slant-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.slant-header > .slant-header-wrapper > .slant-header-content {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slant-header > .slant-header-wrapper > .slant-header-content > .heading-wrapper {
+    background-color: #cea135;
+    color: #11122b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 172px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* page container styles */
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-container > .content-wrapper {
+    width: 1000px;
+}
+    /* grab an 'id' with '#' */
+.page-container > .content-wrapper > #bbq {
+    width: 350px;
+    float: left;
+    margin: 20px 40px 30px 0px;
+    border: 1px solid #cea135;
+}
+.page-container > .content-wrapper p {
+    letter-spacing: 0.7px;
+    word-spacing: 1px;
+    line-height: 20px;
+}
+
+/* photo grid styles */
+.photo-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.photo-wrapper > .photos {
+    width: 1000px;
+}
+.photo-wrapper > .photos > .photo {
+    display: grid;
+   /* this is used for 2 columns */
+    grid-template-columns: 1fr 1fr;
+    margin: -5px;
+
+}
+.photo > .img-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border: 1.5px solid #cea135;
+    margin: -0.5;
+    filter: brightness(115%);
+}
+
+.photo > .photo-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px
+}
+.photo > .photo-text-wrapper  h1{
+    color: #cea135;
+}
+/* use instead of margin to space elements */
+.spacer60 {
+    height: 60px;
+    width: 60px;
+}
+
+
+
+
+
+

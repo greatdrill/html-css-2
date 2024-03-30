@@ -1,0 +1,77 @@
+/* Hero section styles */
+.foundation-section {
+    background-image: url(../images/background-images/owere-fish.jpeg);
+    padding: 100px;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.foundation-section > .top-heading {
+    font-family: serif, Arial, sans-serif;
+    background-color: #11122b;
+    color: #cbcbcb;
+    width: 290px;
+    border-radius: 2px;
+    padding: 1px 20px;
+}
+.foundation-section > .bottom-heading {
+    font-family: serif, Arial, sans-serif;
+    background-color: goldenrod;
+    color: #111211;
+    width: 190px;
+    border-radius: 2px;
+    padding: 10px 0px;
+    margin-top: 15px;
+}
+
+/* Features section styles */
+.features-section {
+    height: 400px;
+    background-color: goldenrod;
+    border-top: 10px solid white;
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu Condensed' sans-serif;
+    /* Creating a box Shadow */
+    box-shadow: 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+
+.features-section > .columns-wrapper img {
+    width: 20px; height: 20px;
+}
+.features-section > .columns-wrapper {  
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.features-section > .columns-wrapper > .columns {
+    padding: 20px;
+    text-align: center; 
+    margin: 42px;
+    border-bottom: 5px solid transparent;
+    border-radius: 10px;
+    transition: 1s;
+}
+.features-section > .columns-wrapper > .columns:hover {
+    border-bottom: 5px solid black;
+}
+.features-section > .columns-wrapper .columns :nth-child(1) {
+    border-radius: 25%;
+}
+.features-section > .columns-wrapper .columns :nth-child(2) {
+    font-weight: 900;
+    font-size: 1em;
+    transition: 1s;
+}
+.features-section > .columns-wrapper .columns :nth-child(2):hover {
+    letter-spacing: 1px;
+}
+.features-section > .columns-wrapper .columns :nth-child(3) {
+    font-size: 1em;
+}
+
